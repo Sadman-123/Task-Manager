@@ -55,6 +55,7 @@ class DesktopTasks extends StatelessWidget{
                     onTap: (){},
                     leading: Icon(Icons.event),
                     title: Text("Upcoming Event"),
+                    subtitle: Text("Iphone SE4 Launch"),
                   ),
                   ListTile(
                     onTap: (){
@@ -136,7 +137,7 @@ class DesktopTasks extends StatelessWidget{
                 context: context,
                 builder: (BuildContext dialogContext) {
                   return AlertDialog(
-                    title: Text('Add to Task'),
+                    title: Text('Add to Task',style: TextStyle(fontWeight: FontWeight.bold),),
                     content: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
