@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-class  ResponsiveMaker extends StatelessWidget{
+class  Adaption_helper extends StatelessWidget{
   Widget desktop;
   Widget? tablet;
   Widget mobile;
-  ResponsiveMaker({required this.desktop,required this.tablet,required this.mobile});
+  Adaption_helper({required this.desktop,required this.tablet,required this.mobile});
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
