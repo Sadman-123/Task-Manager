@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled3/screen/sub_screen/desktop_related/desktop_tasks.dart';
 class Desktopview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,9 @@ class Desktopview extends StatelessWidget {
                 Text("Stay on Track, Stay Productive",style: TextStyle(fontSize: mdw*0.02,color: Colors.black54),),
                 SizedBox(height: mdh*0.09,),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => DesktopTasks(),));
+                  },
                   child: Text(
                     "Get Started!",
                     style: TextStyle(fontSize: mdh*0.03,color: Colors.white),
