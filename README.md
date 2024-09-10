@@ -1,21 +1,21 @@
 # Task Manager App
 
 ## Overview
-This Task Manager App is designed to be both **responsive** and **adaptive**, offering an optimized experience across mobile platforms (iOS and Android) as well as desktop environments. The UI adjusts based on the screen size, ensuring smooth functionality for all device types.
+This Task Manager App is designed to provide a **responsive** and **adaptive** experience across mobile platforms (iOS and Android) and desktop environments. The UI adjusts based on the screen size, ensuring smooth functionality across different device types.
 
 ### Features
-- **Responsive Design**: Adapts to different screen sizes.
-- **Adaptive UI**: Works seamlessly across mobile and desktop.
+- **Responsive Design**: Adjusts to different screen sizes.
+- **Adaptive UI**: Tailored experience for mobile and desktop.
 - **Cross-platform**: Supports Android, iOS, and Desktop.
-- **GetX State Management**: For efficient and reactive state handling.
-- **API Integration**: Fetches and displays data from APIs.
+- **GetX State Management**: Efficient and reactive state management.
+- **API Integration**: Real-time data fetching and display.
 
 ## Device Testing
-The app has been thoroughly tested on various devices to ensure cross-platform compatibility and responsiveness.
+The app has been thoroughly tested on various devices to ensure it works optimally across different screen sizes and platforms.
 
 ### iOS Devices
-- **iPhone SE (Smaller iPhone)**: Screenshots show the app on smaller iPhones.
-- **iPhone 13 (Larger iPhone)**: Screenshots show the app on larger iPhones.
+- **iPhone SE (Smaller iPhone)**: Screenshots show the app on smaller iPhone devices.
+- **iPhone 13 (Larger iPhone)**: Screenshots show the app on larger iPhone devices.
 
 ### Android Devices
 - **Smaller Android Devices**: Tested on devices like Pixel 4, Moto G.
@@ -26,25 +26,32 @@ The app has been thoroughly tested on various devices to ensure cross-platform c
 
 ## Screenshots
 
-### iPhone SE (Smaller iPhone) | iPhone 13 (Larger iPhone) | Smaller Android
+### Smaller iPhone (iPhone SE)
 <p float="left">
   <img src="./SS/s1.png" alt="iPhone SE Screenshot 1" width="250"/>
-  <img src="./SS/s4.png" alt="iPhone 13 Screenshot 1" width="250"/>
-  <img src="./SS/s7.png" alt="Smaller Android Screenshot 1" width="250"/>
-</p>
-
-### iPhone SE | iPhone 13 | Larger Android
-<p float="left">
   <img src="./SS/s2.png" alt="iPhone SE Screenshot 2" width="250"/>
-  <img src="./SS/s5.png" alt="iPhone 13 Screenshot 2" width="250"/>
-  <img src="./SS/s10.png" alt="Larger Android Screenshot 1" width="250"/>
+  <img src="./SS/s3.png" alt="iPhone SE Screenshot 3" width="250"/>
 </p>
 
-### iPhone SE | iPhone 13 | Larger Android
+### Larger iPhone (iPhone 13)
 <p float="left">
-  <img src="./SS/s3.png" alt="iPhone SE Screenshot 3" width="250"/>
+  <img src="./SS/s4.png" alt="iPhone 13 Screenshot 1" width="250"/>
+  <img src="./SS/s5.png" alt="iPhone 13 Screenshot 2" width="250"/>
   <img src="./SS/s6.png" alt="iPhone 13 Screenshot 3" width="250"/>
-  <img src="./SS/s13.png" alt="Larger Android Screenshot 2" width="250"/>
+</p>
+
+### Smaller Android
+<p float="left">
+  <img src="./SS/s7.png" alt="Smaller Android Screenshot 1" width="250"/>
+  <img src="./SS/s8.png" alt="Smaller Android Screenshot 2" width="250"/>
+  <img src="./SS/s9.png" alt="Smaller Android Screenshot 3" width="250"/>
+</p>
+
+### Larger Android (Samsung Galaxy)
+<p float="left">
+  <img src="./SS/s10.png" alt="Larger Android Screenshot 1" width="250"/>
+  <img src="./SS/s11.png" alt="Larger Android Screenshot 2" width="250"/>
+  <img src="./SS/s13.png" alt="Larger Android Screenshot 3" width="250"/>
 </p>
 
 ### Desktop Screenshots
