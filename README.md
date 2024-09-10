@@ -51,7 +51,7 @@ The app has been thoroughly tested on various devices to ensure it works optimal
 <p float="left">
   <img src="./SS/s10.png" alt="Larger Android Screenshot 1" width="250"/>
   <img src="./SS/s11.png" alt="Larger Android Screenshot 2" width="250"/>
-  <img src="./SS/s13.png" alt="Larger Android Screenshot 3" width="250"/>
+  <img src="./SS/s12.png" alt="Larger Android Screenshot 3" width="250"/>
 </p>
 
 ### Desktop Screenshots
