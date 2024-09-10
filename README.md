@@ -10,6 +10,15 @@ This Task Manager App is designed to provide a **responsive** and **adaptive** e
 - **GetX State Management**: Efficient and reactive state management.
 - **API Integration**: Real-time data fetching and display.
 
+## Video Demonstration
+
+Here’s a video showing how the app adapts as the screen is minimized and maximized across different devices:
+
+<video controls width="600">
+  <source src="./SS/video.mkv" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Device Testing
 The app has been thoroughly tested on various devices to ensure it works optimally across different screen sizes and platforms.
 
