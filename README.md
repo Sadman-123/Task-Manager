@@ -17,10 +17,10 @@ The app has been thoroughly tested on various devices to ensure it works optimal
 
 ### Desktop Screenshots
 <p float="left">
-  <img src="./SS/s14.png" alt="Desktop Screenshot 1" width="600"/>
+  <img src="./SS/s13.png" alt="Desktop Screenshot 1" width="600"/>
 </p>
 <p float="left">
-  <img src="./SS/s15.png" alt="Desktop Screenshot 2" width="600"/>
+  <img src="./SS/s14.png" alt="Desktop Screenshot 2" width="600"/>
 </p>
 
 ### iOS Devices
