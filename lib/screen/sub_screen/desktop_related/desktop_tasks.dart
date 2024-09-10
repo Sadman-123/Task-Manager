@@ -59,7 +59,7 @@ class DesktopTasks extends StatelessWidget{
                   ),
                   ListTile(
                     onTap: (){
-                      Get.to(Desktopview());
+                      Get.to(Desktopview(),transition: Transition.cupertino);
                     },
                     leading: Icon(Icons.logout),
                     title: Text("Logout"),

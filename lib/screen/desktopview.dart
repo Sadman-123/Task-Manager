@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:untitled3/screen/sub_screen/desktop_related/desktop_tasks.dart';
 class Desktopview extends StatelessWidget {
   @override
@@ -19,7 +20,7 @@ class Desktopview extends StatelessWidget {
                 SizedBox(height: mdh*0.09,),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => DesktopTasks(),));
+                    Get.offAll(DesktopTasks(),transition: Transition.cupertino);
                   },
                   child: Text(
                     "Get Started!",

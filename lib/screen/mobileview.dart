@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:untitled3/screen/sub_screen/mobile_related/mobile_tasks.dart';
 class Mobileview extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class Mobileview extends StatelessWidget{
                     ),
                     SizedBox(height: mdh*0.1,),
                     Container(
-                      child: ElevatedButton(onPressed: (){}, child: Text("Get Started!",style: TextStyle(color: Colors.white,fontSize: mdw*0.05),),
+                      child: ElevatedButton(onPressed: (){Get.offAll(MobileTasks(),transition: Transition.cupertino);}, child: Text("Get Started!",style: TextStyle(color: Colors.white,fontSize: mdw*0.05),),
                       style: ButtonStyle(
                           padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 70, vertical: 10)), // Adjust padding
                           minimumSize: MaterialStateProperty.all(Size(150, 50)), //
