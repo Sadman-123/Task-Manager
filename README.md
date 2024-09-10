@@ -8,7 +8,6 @@ This Task Manager App is designed to provide a **responsive** and **adaptive** e
 - **Adaptive UI**: Tailored experience for mobile and desktop.
 - **Cross-platform**: Supports Android, iOS, and Desktop.
 - **GetX State Management**: Efficient and reactive state management.
-- **API Integration**: Real-time data fetching and display.
 
 ## Device Testing
 The app has been thoroughly tested on various devices to ensure it works optimally across different screen sizes and platforms.
@@ -22,9 +21,6 @@ The app has been thoroughly tested on various devices to ensure it works optimal
 </p>
 <p float="left">
   <img src="./SS/s15.png" alt="Desktop Screenshot 2" width="600"/>
-</p>
-<p float="left">
-  <img src="./SS/s16.png" alt="Desktop Screenshot 3" width="600"/>
 </p>
 
 ### iOS Devices
@@ -87,8 +83,7 @@ The app has been thoroughly tested on various devices to ensure it works optimal
 ## Dependencies
 - **Flutter** (version 3.x or higher)
 - **GetX** (state management)
-- **http** (for API calls)
 - **device_preview** (for responsive design testing)
 
 ## Contact
-For any issues or contributions, feel free to contact me at [your-email@example.com].
+For any issues or contributions, feel free to contact me at [fareless.ranger@gmail.com].
