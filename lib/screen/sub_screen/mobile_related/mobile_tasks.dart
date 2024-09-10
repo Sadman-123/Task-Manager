@@ -158,24 +158,44 @@ class MobileTasks extends StatelessWidget{
             margin: EdgeInsets.all(10),
             child: Text("My Tasks",style: TextStyle(fontSize: mdw*0.11,fontWeight: FontWeight.bold),),
           ),
-          Expanded(
-            child: Container(
-              margin: EdgeInsets.all(10),
-              width: double.infinity,
-              child:  Obx(()=>ListView.separated(
-                itemCount: controller.arr.length,
-                itemBuilder: (context, index) {
-                  return Obx(()=>ListTile(
-                    title: Text("${controller.arr[index]['title']}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: mdw*0.05),),
-                    subtitle: Text("${controller.arr[index]['task']}",style: TextStyle(fontSize: mdw*0.0556),),
-                  ));
-                },
-                separatorBuilder: (context, index) {
-                  return Divider();
-                },
-              ))
+          Obx(()=>Expanded(
+            child: controller.arr.isEmpty?Container(
+              margin: EdgeInsets.only(
+                top: 33
+              ),
+              alignment: Alignment.center,
+              child: Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    child: Image.asset("assets/people.png",
+                      height: mdh*0.27,
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    child: Text("Relax! You have no Task Today!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: mdw*0.06),),
+                  )
+                ],
+              ),
+            ):Container(
+                margin: EdgeInsets.all(10),
+                width: double.infinity,
+                child:  Obx(()=>ListView.separated(
+                  itemCount: controller.arr.length,
+                  itemBuilder: (context, index) {
+                    return Obx(()=>ListTile(
+                      title: Text("${controller.arr[index]['title']}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: mdw*0.05),),
+                      subtitle: Text("${controller.arr[index]['task']}",style: TextStyle(fontSize: mdw*0.0556),),
+                      trailing: IconButton(onPressed: (){controller.delete_task(index);}, icon: Icon(Icons.delete)),
+                    ));
+                  },
+                  separatorBuilder: (context, index) {
+                    return Divider();
+                  },
+                ))
             ),
-          )
+          ))
         ],
       ),
     );
