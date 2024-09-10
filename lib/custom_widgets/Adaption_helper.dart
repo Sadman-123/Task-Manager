@@ -3,7 +3,7 @@ class  Adaption_helper extends StatelessWidget{
   Widget desktop;
   Widget? tablet;
   Widget mobile;
-  Adaption_helper({required this.desktop,required this.tablet,required this.mobile});
+  Adaption_helper({required this.desktop, this.tablet,required this.mobile});
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {

@@ -18,7 +18,6 @@ class Main extends StatelessWidget
       debugShowCheckedModeBanner: false,
       home: Adaption_helper(
         desktop: Desktopview(),
-        tablet: Tabletview(),
         mobile: Mobileview(),
       ),
     );
