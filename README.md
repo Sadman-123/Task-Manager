@@ -10,17 +10,22 @@ This Task Manager App is designed to provide a **responsive** and **adaptive** e
 - **GetX State Management**: Efficient and reactive state management.
 - **API Integration**: Real-time data fetching and display.
 
-## Video Demonstration
-
-Here’s a video showing how the app adapts as the screen is minimized and maximized across different devices:
-
-<video controls width="600">
-  <source src="./SS/video.mkv" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 ## Device Testing
 The app has been thoroughly tested on various devices to ensure it works optimally across different screen sizes and platforms.
+
+### Desktop
+- **Desktop View**: The app layout adapts for larger screens like desktops, providing a tailored experience.
+
+### Desktop Screenshots
+<p float="left">
+  <img src="./SS/s14.png" alt="Desktop Screenshot 1" width="600"/>
+</p>
+<p float="left">
+  <img src="./SS/s15.png" alt="Desktop Screenshot 2" width="600"/>
+</p>
+<p float="left">
+  <img src="./SS/s16.png" alt="Desktop Screenshot 3" width="600"/>
+</p>
 
 ### iOS Devices
 - **iPhone SE (Smaller iPhone)**: Screenshots show the app on smaller iPhone devices.
@@ -29,9 +34,6 @@ The app has been thoroughly tested on various devices to ensure it works optimal
 ### Android Devices
 - **Smaller Android Devices**: Tested on devices like Pixel 4, Moto G.
 - **Larger Android Devices**: Tested on devices like Samsung Galaxy S21.
-
-### Desktop
-- **Desktop View**: The app layout adapts for larger screens like desktops, providing a tailored experience.
 
 ## Screenshots
 
@@ -61,13 +63,6 @@ The app has been thoroughly tested on various devices to ensure it works optimal
   <img src="./SS/s10.png" alt="Larger Android Screenshot 1" width="250"/>
   <img src="./SS/s11.png" alt="Larger Android Screenshot 2" width="250"/>
   <img src="./SS/s12.png" alt="Larger Android Screenshot 3" width="250"/>
-</p>
-
-### Desktop Screenshots
-<p float="left">
-  <img src="./SS/s14.png" alt="Desktop Screenshot 1" width="300"/>
-  <img src="./SS/s15.png" alt="Desktop Screenshot 2" width="300"/>
-  <img src="./SS/s16.png" alt="Desktop Screenshot 3" width="300"/>
 </p>
 
 ## How to Run
