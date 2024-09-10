@@ -83,24 +83,36 @@ class DesktopTasks extends StatelessWidget{
                     ),
                     child: Text("My Tasks",style: TextStyle(fontSize: mdw*0.04,fontWeight: FontWeight.bold),),
                   ),
-                  Expanded(
-                    child: Container(
-                      width: mdw*0.51,
-                      child: Obx(()=>ListView.separated(
-                        itemCount: controller.arr.length,
-                        itemBuilder: (context, index) {
-                          return Obx(()=>ListTile(
-                            title: Text("${controller.arr[index]['title']}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: mdw*0.0138),),
-                            subtitle: Text("${controller.arr[index]['task']}"),
-                            trailing: IconButton(onPressed: (){controller.delete_task(index);}, icon: Icon(Icons.delete)),
-                          ));
-                        },
-                        separatorBuilder: (context, index) {
-                          return Divider();
-                        },
-                      ))
-                    ),
-                  )
+                 Obx(()=> Expanded(
+                   child: controller.arr.isEmpty?Container(
+                     child: Column(
+                       children: [
+                         Container(
+                           child: Image.asset("assets/people.png",height: mdh*0.4,width: mdw*0.5,),
+                         ),
+                         SizedBox(height: mdh*0.02),
+                         Container(
+                           child: Text("Relax! You have no Task Today!",style: TextStyle(fontSize: mdw*0.027,fontWeight: FontWeight.bold),),
+                         )
+                       ],
+                     ),
+                   ): Container(
+                       width: mdw*0.51,
+                       child: Obx(()=>ListView.separated(
+                         itemCount: controller.arr.length,
+                         itemBuilder: (context, index) {
+                           return Obx(()=>ListTile(
+                             title: Text("${controller.arr[index]['title']}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: mdw*0.0138),),
+                             subtitle: Text("${controller.arr[index]['task']}"),
+                             trailing: IconButton(onPressed: (){controller.delete_task(index);}, icon: Icon(Icons.delete)),
+                           ));
+                         },
+                         separatorBuilder: (context, index) {
+                           return Divider();
+                         },
+                       ))
+                   ),
+                 ))
                 ],
               ),
             ),
