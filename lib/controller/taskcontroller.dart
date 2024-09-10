@@ -15,4 +15,8 @@ class Taskcontroller extends GetxController{
     ct1.clear();
     ct2.clear();
   }
+  void delete_task(int index)
+  {
+    arr.removeAt(index);
+  }
 }
