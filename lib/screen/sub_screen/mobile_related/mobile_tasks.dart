@@ -76,7 +76,7 @@ class MobileTasks extends StatelessWidget{
             ),
             ListTile(
               onTap: (){
-                Get.offAll(Mobileview(),transition: Transition.cupertino);
+                Get.offAll(()=>Mobileview(),transition: Transition.cupertino);
               },
               leading: Icon(Icons.logout),
               title: Text("Logout"),
@@ -185,9 +185,17 @@ class MobileTasks extends StatelessWidget{
                   itemCount: controller.arr.length,
                   itemBuilder: (context, index) {
                     return Obx(()=>ListTile(
-                      title: Text("${controller.arr[index]['title']}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: mdw*0.05),),
-                      subtitle: Text("${controller.arr[index]['task']}",style: TextStyle(fontSize: mdw*0.0556),),
-                      trailing: Text("${controller.arr[index]['time']}"),
+                      title:RichText(
+                        text: TextSpan(
+                            children: [
+                              TextSpan(text: "${controller.arr[index]['title']}",style: TextStyle(fontSize: mdw*0.066,fontWeight: FontWeight.bold,color: Colors.black)),
+                              TextSpan(text: " "),
+                              TextSpan(text: "(${controller.arr[index]['time']})",style: TextStyle(fontSize: mdw*0.032,color: Colors.black))
+                            ]
+                        ),
+                      ),
+                      subtitle: Text("${controller.arr[index]['task']}",style: TextStyle(fontSize: mdw*0.0460,color: Colors.black),),
+                      trailing: IconButton(onPressed: (){controller.delete_task(controller.arr[index]['_id']);}, icon: Icon(Icons.delete))
                     ));
                   },
                   separatorBuilder: (context, index) {

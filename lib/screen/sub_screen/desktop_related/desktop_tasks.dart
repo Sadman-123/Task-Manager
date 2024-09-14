@@ -102,9 +102,17 @@ class DesktopTasks extends StatelessWidget{
                          itemCount: controller.arr.length,
                          itemBuilder: (context, index) {
                            return Obx(()=>ListTile(
-                             title: Text("${controller.arr[index]['title']}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: mdw*0.0138),),
+                             title: RichText(
+                               text: TextSpan(
+                                 children: [
+                                   TextSpan(text: "${controller.arr[index]['title']}",style: TextStyle(fontSize: mdw*0.016,fontWeight: FontWeight.bold)),
+                                   TextSpan(text: " "),
+                                   TextSpan(text: "(${controller.arr[index]['time']})")
+                                 ]
+                               ),
+                             ),
                              subtitle: Text("${controller.arr[index]['task']}"),
-                             trailing:Text("${controller.arr[index]['time']}")
+                            trailing: IconButton(onPressed: (){controller.delete_task(controller.arr[index]['_id']);}, icon: Icon(Icons.delete)),
                            ));
                          },
                          separatorBuilder: (context, index) {

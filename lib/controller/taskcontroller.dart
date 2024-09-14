@@ -36,6 +36,21 @@ class Taskcontroller extends GetxController{
       print("Something wrong");
     }
   }
+  void delete_task(String idd)
+  async{
+    var mydatas={
+      "idx":idd,
+    };
+    var url=Uri.parse("https://task-api-wine.vercel.app/delete");
+    var res=await http.delete(url,headers:<String, String>{'Content-Type': 'application/json; charset=UTF-8',},body: json.encode(mydatas));
+    if(res.statusCode==200)
+    {
+      get_dat();
+    }
+    else{
+      print("Something wrong");
+    }
+  }
   void clrTextField()
   {
     ct1.clear();

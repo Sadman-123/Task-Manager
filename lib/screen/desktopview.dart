@@ -20,7 +20,7 @@ class Desktopview extends StatelessWidget {
                 SizedBox(height: mdh*0.09,),
                 ElevatedButton(
                   onPressed: () {
-                    Get.offAll(DesktopTasks(),transition: Transition.cupertino);
+                    Get.offAll(()=>DesktopTasks(),transition: Transition.cupertino);
                   },
                   child: Text(
                     "Get Started!",
