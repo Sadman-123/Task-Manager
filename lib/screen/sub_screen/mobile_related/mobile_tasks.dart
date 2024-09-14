@@ -34,7 +34,7 @@ class MobileTasks extends StatelessWidget{
           children: [
             UserAccountsDrawerHeader(
               currentAccountPicture: CircleAvatar(
-                backgroundImage: NetworkImage("https://i.pravatar.cc/300"),
+                backgroundImage: AssetImage("assets/panda.png"),
                 radius: 30,
               ),
               accountName: Text("Person"),
