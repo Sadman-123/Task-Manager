@@ -5,9 +5,7 @@ import 'package:untitled3/screen/desktopview.dart';
 import 'package:untitled3/screen/mobileview.dart';
 void main()
 {
-  runApp(
-   Main()
-  );
+  runApp(Main());
 }
 class Main extends StatelessWidget
 {
