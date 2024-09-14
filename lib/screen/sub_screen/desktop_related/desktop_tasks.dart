@@ -112,7 +112,7 @@ class DesktopTasks extends StatelessWidget{
                                ),
                              ),
                              subtitle: Text("${controller.arr[index]['task']}"),
-                            trailing: IconButton(onPressed: (){controller.delete_task(controller.arr[index]['_id']);}, icon: Icon(Icons.delete)),
+                            trailing: IconButton(onPressed: (){controller.delete_task(controller.arr[index]['_id']);}, icon: Icon(Icons.delete,color: Colors.black,)),
                            ));
                          },
                          separatorBuilder: (context, index) {
