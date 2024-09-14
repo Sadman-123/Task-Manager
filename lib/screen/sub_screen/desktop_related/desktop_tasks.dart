@@ -195,7 +195,7 @@ class DesktopTasks extends StatelessWidget{
                               );
                               return;
                           }
-                        controller.add_to_task();
+                        controller.add_dat();
                         Navigator.of(context).pop();
                       }, child: Text("Add to Task")),
                       TextButton(

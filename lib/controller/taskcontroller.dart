@@ -12,26 +12,33 @@ class Taskcontroller extends GetxController{
     super.onInit();
     get_dat();
   }
-  void add_to_task()
-  {
-    arr.add(
-      {
-        "title":ct1.text,
-        "task":ct2.text
-      }
-    );
-    ct1.clear();
-    ct2.clear();
-  }
-  void delete_task(int index)
-  {
-    arr.removeAt(index);
-  }
   void get_dat()
   async{
     var url=Uri.parse("https://task-api-wine.vercel.app/api");
     var res=await http.get(url);
     var dat=jsonDecode(res.body);
     arr.assignAll(dat);
+  }
+  void add_dat() async
+  {
+    var mydatas={
+      "title":ct1.text,
+      "task":ct2.text
+    };
+    var url=Uri.parse("https://task-api-wine.vercel.app/insert");
+    var res=await http.post(url,headers:<String, String>{'Content-Type': 'application/json; charset=UTF-8',},body: json.encode(mydatas));
+    if(res.statusCode==200)
+      {
+        get_dat();
+        clrTextField();
+      }
+    else{
+      print("Something wrong");
+    }
+  }
+  void clrTextField()
+  {
+    ct1.clear();
+    ct2.clear();
   }
 }

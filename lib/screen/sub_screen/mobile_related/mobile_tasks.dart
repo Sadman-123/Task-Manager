@@ -136,7 +136,7 @@ class MobileTasks extends StatelessWidget{
                       );
                       return;
                     }
-                    controller.add_to_task();
+                    controller.add_dat();
                     Navigator.of(context).pop();
                   }, child: Text("Add to Task")),
                   TextButton(
@@ -187,7 +187,7 @@ class MobileTasks extends StatelessWidget{
                     return Obx(()=>ListTile(
                       title: Text("${controller.arr[index]['title']}",style: TextStyle(fontWeight: FontWeight.bold,fontSize: mdw*0.05),),
                       subtitle: Text("${controller.arr[index]['task']}",style: TextStyle(fontSize: mdw*0.0556),),
-                      trailing: IconButton(onPressed: (){controller.delete_task(index);}, icon: Icon(Icons.delete)),
+                      trailing: Text("${controller.arr[index]['time']}"),
                     ));
                   },
                   separatorBuilder: (context, index) {
